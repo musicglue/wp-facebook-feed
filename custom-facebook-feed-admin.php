@@ -1517,20 +1517,20 @@ function cff_style_page() {
                 </tbody>
             </table>
             <?php submit_button(); ?>
-            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url( 'img/pro.png' , __FILE__ ) ?>" /></a>
+            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url( '/img/pro.png' , __FILE__ ) ?>" /></a>
             <?php } //End Misc tab ?>
         </form>
 <?php 
 } //End Style_Page
 //Enqueue admin styles
 function cff_admin_style() {
-        wp_register_style( 'custom_wp_admin_css', plugin_dir_url( __FILE__ ) . 'css/cff-admin-style.css', false, '1.0.0' );
+        wp_register_style( 'custom_wp_admin_css', plugins_url() . '/css/cff-admin-style.css', false, '1.0.0' );
         wp_enqueue_style( 'custom_wp_admin_css' );
 }
 add_action( 'admin_enqueue_scripts', 'cff_admin_style' );
 //Enqueue admin scripts
 function cff_admin_scripts() {
-    wp_enqueue_script( 'cff_admin_script', plugin_dir_url( __FILE__ ) . 'js/cff-admin-scripts.js' );
+    wp_enqueue_script( 'cff_admin_script', plugins_url() . '/js/cff-admin-scripts.js' );
     if( !wp_script_is('jquery-ui') ) { 
         wp_enqueue_script( 'jquery-ui' , 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js' );
     }

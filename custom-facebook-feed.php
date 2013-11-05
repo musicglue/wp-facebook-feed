@@ -910,7 +910,7 @@ if(!is_callable('stripos')){
 add_action( 'wp_enqueue_scripts', 'cff_add_my_stylesheet' );
 function cff_add_my_stylesheet() {
     // Respects SSL, Style.css is relative to the current file
-    wp_register_style( 'cff', plugins_url('css/cff-style.css?3', __FILE__) );
+    wp_register_style( 'cff', plugins_url('/css/cff-style.css?3', __FILE__) );
     wp_enqueue_style( 'cff' );
 }
 //Enqueue scripts
