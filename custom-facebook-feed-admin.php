@@ -1517,7 +1517,7 @@ function cff_style_page() {
                 </tbody>
             </table>
             <?php submit_button(); ?>
-            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url() '/wp-facebook-feed/img/pro.png'; ?>" /></a>
+            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url(). '/wp-facebook-feed/img/pro.png'; ?>" /></a>
             <?php } //End Misc tab ?>
         </form>
 <?php 
