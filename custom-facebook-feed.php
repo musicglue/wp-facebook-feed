@@ -910,7 +910,7 @@ if(!is_callable('stripos')){
 add_action( 'wp_enqueue_scripts', 'cff_add_my_stylesheet' );
 function cff_add_my_stylesheet() {
     // Respects SSL, Style.css is relative to the current file
-    wp_register_style( 'cff', plugins_url('/css/cff-style.css?3', __FILE__) );
+    wp_register_style( 'cff', plugins_url().'/wp-facebook-feed/css/cff-style.css?3' );
     wp_enqueue_style( 'cff' );
 }
 //Enqueue scripts
@@ -918,7 +918,7 @@ add_action( 'wp_enqueue_scripts', 'cff_scripts_method' );
 function cff_scripts_method() {
     wp_enqueue_script(
         'cffscripts',
-        plugins_url( '/js/cff-scripts.js?3' , __FILE__ ),
+        plugins_url().'/wp-facebook-feed/js/cff-scripts.js?3',
         array( 'jquery' )
     );
 }

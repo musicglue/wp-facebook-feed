@@ -264,7 +264,7 @@ function cff_settings_page() {
         <p><a href="http://smashballoon.com/custom-facebook-feed/docs/shortcodes/" target="_blank"><?php _e('Click here'); ?></a> <?php _e('for a full list of shortcode options'); ?></p>
         <hr />
         
-        <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url( 'img/pro.png' , __FILE__ ) ?>" /></a>
+        <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url().'/wp-facebook-feed/img/pro.png'; ?>" /></a>
         <hr />
         <h4><?php _e('<u>System Info:</u>'); ?></h4>
         <p>PHP Version:          <b><?php echo PHP_VERSION . "\n"; ?></b></p>
@@ -785,7 +785,7 @@ function cff_style_page() {
             </table>
             <?php submit_button(); ?>
             
-            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url( 'img/pro.png' , __FILE__ ) ?>" /></a>
+            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url(). '/wp-facebook-feed/img/pro.png';?>" /></a>
             <?php } //End General tab ?>
             <?php if( $active_tab == 'post_layout' ) { //Start Post Layout tab ?>
             <input type="hidden" name="<?php echo $style_post_layout_hidden_field_name; ?>" value="Y">
@@ -807,19 +807,19 @@ function cff_style_page() {
                     <tr valign="top">
                         <th scope="row"><?php _e('Thumbnail:'); ?></th>
                         <td>
-                            <img src="<?php echo plugins_url( 'img/layout-thumb.png' , __FILE__ ) ?>" alt="Thumbnail Layout" width="400px" style="border: 1px solid #ccc;" />
+                            <img src="<?php echo plugins_url(). '/wp-facebook-feed/img/layout-thumb.png'; ?>" alt="Thumbnail Layout" width="400px" style="border: 1px solid #ccc;" />
                         </td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><?php _e('Half-width:'); ?></th>
                         <td>
-                            <img src="<?php echo plugins_url( 'img/layout-half.png' , __FILE__ ) ?>" alt="Half Width Layout" width="400px" style="border: 1px solid #ccc;" />
+                            <img src="<?php echo plugins_url(). '/wp-facebook-feed/img/layout-half.png'; ?>" alt="Half Width Layout" width="400px" style="border: 1px solid #ccc;" />
                         </td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><?php _e('Full-width:'); ?></th>
                         <td>
-                            <img src="<?php echo plugins_url( 'img/layout-full.png' , __FILE__ ) ?>" alt="Full Width Layout" width="400px" style="border: 1px solid #ccc;" />
+                            <img src="<?php echo plugins_url(). '/wp-facebook-feed/img/layout-full.png'; ?>" alt="Full Width Layout" width="400px" style="border: 1px solid #ccc;" />
                         </td>
                     </tr>
                     </tbody>
@@ -874,7 +874,7 @@ function cff_style_page() {
             </table>
             
             <?php submit_button(); ?>
-            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url( 'img/pro.png' , __FILE__ ) ?>" /></a>
+            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url().'/wp-facebook-feed/img/pro.png'; ?>" /></a>
             <?php } //End Post Layout tab ?>
             <?php if( $active_tab == 'typography' ) { //Start Typography tab ?>
             <input type="hidden" name="<?php echo $style_typography_hidden_field_name; ?>" value="Y">
@@ -1425,7 +1425,7 @@ function cff_style_page() {
             <div style="margin-top: -15px;">
                 <?php submit_button(); ?>
             </div>
-            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url( 'img/pro.png' , __FILE__ ) ?>" /></a>
+            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url(). '/wp-facebook-feed/img/pro.png';?>" /></a>
             
             <?php } //End Typography tab ?>
             <?php if( $active_tab == 'misc' ) { //Start Misc tab ?>
@@ -1517,7 +1517,7 @@ function cff_style_page() {
                 </tbody>
             </table>
             <?php submit_button(); ?>
-            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url( '/img/pro.png' , __FILE__ ) ?>" /></a>
+            <a href="http://smashballoon.com/custom-facebook-feed/demo" target="_blank"><img src="<?php echo plugins_url() '/wp-facebook-feed/img/pro.png'; ?>" /></a>
             <?php } //End Misc tab ?>
         </form>
 <?php 
